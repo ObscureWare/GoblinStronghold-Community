@@ -1,0 +1,14 @@
+# Release archives and build products are uploaded separately.
+*.zip
+*.gmap
+*.tut
+*.tut.loc
+*.exe
+*.dll
+*.pdb
+bin/
+obj/
+artifacts/
+.vs/
+Thumbs.db
+.DS_Store
