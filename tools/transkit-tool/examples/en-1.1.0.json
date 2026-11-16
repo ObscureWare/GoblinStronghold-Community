@@ -1,0 +1,42 @@
+{
+  "formatVersion": 1,
+  "familyId": "735a3edd-e1a5-40bd-8553-1129244b94f1",
+  "packageId": "6be1b602-60ea-48c1-8f52-86aefb5fa9d8",
+  "sourcePackageId": "00000000-0000-0000-0000-000000000000",
+  "translationId": "00000000-0000-0000-0000-000000000000",
+  "author": "Goblin Stronghold community example",
+  "title": "Example game UI",
+  "description": "Demonstration fixture, not an exported game language pack.",
+  "identity": {
+    "domain": "game-ui",
+    "id": "example:game-ui"
+  },
+  "locale": "en",
+  "sourceVersion": "1.1.0",
+  "revision": 0,
+  "sourceHash": "",
+  "entries": {
+    "menu.new-game": {
+      "text": "Play",
+      "reviewed": true,
+      "context": "Main menu button"
+    },
+    "status.food": {
+      "text": "Stored food: {0}",
+      "reviewed": true,
+      "context": "Stock counter"
+    },
+    "hint.build": {
+      "text": "Use {action:build}.",
+      "reviewed": true,
+      "context": "Action reference"
+    }
+  },
+  "renames": [
+    {
+      "since": "1.1.0",
+      "from": "menu.play",
+      "to": "menu.new-game"
+    }
+  ]
+}

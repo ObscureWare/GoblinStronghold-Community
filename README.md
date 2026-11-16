@@ -26,3 +26,7 @@ docs/                    Catalog, release and moderation procedures
 Archives belong in Releases or the author's release hosting, not Git history. The catalog is currently documentation; it is not an in-game downloader or an implemented mod manifest format.
 
 Maintainers: see [initial setup](docs/SETUP.md), [editor publishing](docs/PUBLISHING_EDITOR.md), [triage](docs/TRIAGE.md) and [licensing](LICENSES.md).
+
+## Translation tools
+
+[transkit-tool CLI](tools/transkit-tool/README.md) provides versioned EN/translation packages, XLSX and JSON transkits, migration and validation. See the [localization roadmap](docs/transkit-roadmap.md). This is an independent tool; game/editor integration is planned separately.

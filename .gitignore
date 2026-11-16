@@ -12,3 +12,6 @@ artifacts/
 .vs/
 Thumbs.db
 .DS_Store
+
+# Built localization release packages
+*.langpack
