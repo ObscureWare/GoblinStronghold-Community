@@ -35,14 +35,14 @@ Paczka zawiera autora, nazwę i opis projektu. W przyszłym selektorze gry gracz
 - Kontrola parametrów, podstawowego formatowania, kompletności, schematu i powtarzających się kluczy; zapis do nowego pliku.
 - Testy migracji, konkurencyjnych tłumaczeń, obiegu XLSX/JSON, manipulacji kolumnami źródłowymi i wywołań CLI.
 
-## T2 — eksport EN i zgodność kontraktów (następne)
+## T2 — eksport EN i zgodność kontraktów (częściowo wdrożone)
 
 Osobne zadania:
 
-1. Dodać jawny eksport EN z gry do `game-ui` oraz osobny z edytora do `editor-ui`. Nie rozdzielać napisów heurystyką w transkit-tool.
-2. Eksportować współdzielone Core/mod/map/tutorial z ich stabilnymi identyfikatorami i kontekstem.
-3. Wprowadzić utrwalany rejestr rodzin/wydanych GUID-ów oraz nadawanie nowych GUID-ów EN przy zmianie źródła. Nie generować nowych identyfikatorów przy każdym buildzie tego samego wydania.
-4. W procesie zmiany nazwy klucza wymagać wpisu `renames` i testu migracji; nie używać ponownie wycofanych kluczy.
+1. **Gotowe:** jawny eksport EN `game-ui`, `editor-ui` i współdzielonego `core`. Producent używa jawnej mapy właścicieli sekcji; transkit-tool nie zgaduje domen. Pierwsze wydania: 1.0.0.
+2. **Core gotowe.** Pozostają osobne eksportery EN modów, map i tutoriali z ich własnymi rodzinami i kontekstem.
+3. **Gotowe:** trwały rejestr rodzin i wydań, zamrożone paczki bazowe, niezależne wersje domen. GUID wydania powstaje wyłącznie przy jawnym rejestrowaniu nowej wersji; powtórny eksport zachowuje GUID i zawartość.
+4. **Gotowe po stronie producenta:** usunięcie starego klucza wymaga wpisu `renames` lub jawnego potwierdzenia usunięcia. Historia zmian nazw jest sprawdzana i zachowywana; nie wolno dopisywać zmian wstecz.
 5. Udostępnić neutralny, publiczny kontrakt i wspólne wektory testowe dla konsumentów, bez zależności CLI od silnika.
 6. Dodać jawne schematy placeholderów, liczby mnogiej, rodzajów gramatycznych i formatowania. Obecna kontrola tokenów nie zastępuje pełnego parsera treści gry.
 7. Zweryfikować XLSX po rzeczywistym zapisaniu w Excelu i LibreOffice. Obecne testy sprawdzają OpenXML i symulują edycję komórek.

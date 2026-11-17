@@ -30,3 +30,5 @@ Maintainers: see [initial setup](docs/SETUP.md), [editor publishing](docs/PUBLIS
 ## Translation tools
 
 [transkit-tool CLI](tools/transkit-tool/README.md) provides versioned EN/translation packages, XLSX and JSON transkits, migration and validation. See the [localization roadmap](docs/transkit-roadmap.md). This is an independent tool; game/editor integration is planned separately.
+
+[English source packs](docs/english-source-packs.md): independent game UI, editor UI and shared Core baselines.
